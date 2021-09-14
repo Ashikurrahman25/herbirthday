@@ -92,7 +92,7 @@ canvas {
 h4 {
   font-size: 26px;
   line-height: 1.6;
-  font-family: 'Amatic SC', cursive !important;
+  //font-family: 'Amatic SC', cursive !important;
 }
 
 .color1 {
@@ -110,7 +110,6 @@ h4 {
   width: 100%;
   height: 400px;
   background: #e0e1dc;
-  // font-family: 'Indie Flower', cursive !important;
   transform-style: preserve-3d;
   transform: translateX(-50%) perspective(2000px);
   box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
