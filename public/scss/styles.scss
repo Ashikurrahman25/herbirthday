@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+
+$white: #fff;
+$dark: #111;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif, 'Baloo Da 2', cursive;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 100vh;
+  padding: 0 1rem;
+  width: 100%;
+  @media screen and(max-width: 575.98px) {
+    max-width: 400px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+.card-wrapper {
+  padding: 0 1rem;
+  width: calc(100% / 4);
+  @media screen and(max-width: 1199.98px) {
+    width: calc(100% / 3);
+  }
+  @media screen and(max-width: 991.98px) {
+    width: 50%;
+  }
+  @media screen and(max-width: 575.98px) {
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 2rem;
+    background-color: $white;
+    // border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 0.5rem;
+    height: calc(100% - 2rem);
+    .image {
+      position: relative;
+      // padding-top: 70%;
+      width: 100%;
+      img {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        // border-radius: 0.5rem;
+      }
+    }
+    blockquote {
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1.25rem;
+      @media screen and(max-width: 575.98px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-55%);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+::selection {
+  background: transparent;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 1.6;
+  font-family: 'Amatic SC', cursive !important;
+}
+
+.color1 {
+  color: #1bbc9b;
+} /*MOUNTAIN MEADOW*/
+.color2 {
+  color: #c0392b; /*TALL POPPY*/
+}
+
+.wish-card {
+  color: #050b0e; /*SHERPA BLUE*/
+  position: absolute;
+  left: 50%;
+  max-width: 300px;
+  width: 100%;
+  height: 400px;
+  background: #e0e1dc;
+  // font-family: 'Indie Flower', cursive !important;
+  transform-style: preserve-3d;
+  transform: translateX(-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
+    20px 0 60px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+
+.wish-card:hover {
+  transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
+    0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.wish-card:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #bac1ba;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+
+.wish-card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  background: #92a29c;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+
+.wish-card .imgBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: left;
+  transition: 0.7s;
+}
+
+.wish-card .bark {
+  position: absolute;
+  background: #e0e1dc;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.wish-card .imgBox img {
+  min-width: 250px;
+  max-height: 400px;
+}
+
+.wish-card:hover .imgBox {
+  transform: rotateY(-135deg);
+}
+
+.wish-card:hover .bark {
+  opacity: 1;
+  transition: 0.6s;
+  box-shadow: 300px 200px 100px rgba(0, 0, 0, 0.4) inset;
+}
+
+.wish-card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  z-index: -1;
+  margin-top: 70px;
+}
+
+.wish-card .details p {
+  font-size: 13px;
+  line-height: 1.6;
+  transform: rotate(-10deg);
+  padding: 0 0 0 20px;
+}
+
+.wish-card .details h4 {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

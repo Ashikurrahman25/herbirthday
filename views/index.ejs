@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Wish</title>
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <script type="text/javascript" src="./assets/js/birthday.js" defer></script>
+  </head>
+  <body>
+    <canvas id="c" width="831" height="880"></canvas>
+    <div class="container">
+      <div class="row">
+        <% data.forEach(item => { %>
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="image">
+              <img src= "<%= item['image_url'] %>"" alt="Alternative Text" />
+            </div>
+            <blockquote>
+              <%= item['quote'] %>
+            </blockquote>
+          </div>
+        </div>
+        <!-- <%# item %> -->
+        <%}) %>
+      </div>
+    </div>
+    <div class="wish-card">
+      <div class="imgBox">
+        <div class="bark"></div>
+        <img src="https://i.ibb.co/HTQ7FgH/lastofus-2.jpg" />
+      </div>
+      <div class="details">
+        <p>সাহিত্য? সে তো লিখতে জানি না
+          তবে, আজ তোমার জন্য না হয় লিখলাম।</p>
+        <p>ছবি? তেমন আঁকা হয় না
+          তবে, আজ থেকে না হয় তোমাকেই আঁকলাম।</p>
+        <p>স্বপ্ন? সাজাতে পারি না
+          তবে, অনুমতি পেলে না হয় তোমাকে ঘিরেই সাজালাম।</p>
+        <p>হাত দুটো? ধরা হয় না,
+          তবে, সুযোগ দিলে আজই না হয় ধরলাম।</p>
+        <p>অনুভূতিগুলো? প্রকাশ করা হয় না
+          তবে, সাহস দিলে না হয় আজ করেই ফেললাম।</p>
+        <p>ভালোবাসতে? জানি না,
+          তবে, সম্মতি পেলে না হয় তোমাকেই বাসলাম।</p>
+        <p>হয়তো তোমায় পাওয়া হবে না
+          তবে, চেষ্টাটাই না হয় করে গেলাম।</p>
+      </div>
+    </div>
+  </body>
+</html>
