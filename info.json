@@ -1,13 +1,6 @@
 {
   "data": [
-    {
-        "image_url": "https://i.ibb.co/ssSZRD8/46.jpg",
-        "quote": "🤗🤗🤗🤗"
-    },
-    {
-        "image_url": "https://i.ibb.co/sFHdGvw/47.jpg",
-        "quote": "🍫🍫🍫🍫"
-    },
+   
     {
         "image_url": "https://i.ibb.co/GtQJVyw/20.jpg",
         "quote": "মেলাবো না তোমায় 😅"
@@ -183,6 +176,14 @@
     {
         "image_url": "https://i.ibb.co/XjCxtd3/19.jpg",
         "quote": "শুভ জন্মদিন ওয়াশিকা 😇"
+    },
+    {
+        "image_url": "https://i.ibb.co/ssSZRD8/46.jpg",
+        "quote": "🤗🤗🤗🤗"
+    },
+    {
+        "image_url": "https://i.ibb.co/sFHdGvw/47.jpg",
+        "quote": "🍫🍫🍫🍫"
     }
 ]
 
